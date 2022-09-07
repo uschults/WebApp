@@ -1,2 +1,2 @@
 # WebApp
-Veebirakenduste loomine 
+Veebirakenduste loomine aka Web Application Development
