@@ -12,12 +12,15 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    
+    
     /* 
        list-style: none = No marker is shown 
      */
 }
-li + li::before {
-    content: " | ";
+
+li{
+    
 }
 .header {
     padding-top: .5em;
@@ -34,8 +37,14 @@ li + li::before {
 }
 
 .nav {
+    margin-left: -1px;
     margin-top: 5px;
     display: flex;
+    
+}
+
+.nav li{
+    border-left: 1px solid rgb(0, 0, 0);
 }
 
 .nav a {
