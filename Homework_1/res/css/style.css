@@ -87,9 +87,13 @@ body {
         justify-content: space-between;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .left_sidebar {
-        /*visibility: hidden;*/
+    visibility: hidden;
+    
+    }
+    .right_sidebar{
+        visibility: hidden;
     }
 }
 
@@ -112,6 +116,7 @@ body {
 }
 .middle_postbar{
     width: 80%;
+    min-width: 350px;
 }
 .left_sidebar{
     border-radius: 25px;
@@ -124,4 +129,8 @@ body {
 .post{
     background-color: antiquewhite;
     margin: 10px;
+}
+.post_image{
+    width: 80%;
+    height: auto;
 }
