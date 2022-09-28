@@ -18,18 +18,22 @@
     </header>
 
     <div class="flex-container">
-        <h1>
-            Welcome to PostIt <br>
-            <a href="#">
-                Create an account <br>
-            </a>
-            or <br> Please log in
-        </h1>
-
-        <input type="text" placeholder="Email" name="email" required> <br>
-        <input type="password" placeholder="Password" name="password" required> <br>
-        <button type="Log in">Log in</button>
-        <label>
+        
+        Welcome to PostIt <br>
+        <a href="#">
+            Create an account <br>
+        </a>
+        or <br> Please log in
+     
+        <form action="index.html">
+            <input type="email" id="email" placeholder="Email" name="email" required> <br>
+            <input type="password" id="password" placeholder="Password" name="email" required> <br>
+            <input type="submit" class="login" value="Log in">
+        </form>
+        
+        <a href="#">
+            Forgot password <br>
+        </a>
     </div>
 </body>
 
