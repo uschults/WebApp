@@ -12,16 +12,9 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    
-    
-    /* 
-       list-style: none = No marker is shown 
-     */
+
 }
 
-li{
-    
-}
 .header {
     padding-top: .5em;
     padding-bottom: .5em;
@@ -32,6 +25,7 @@ li{
     border-radius: 5px;
 
     display: flex;
+    
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
 }
@@ -52,13 +46,23 @@ li{
     display: block;
     color: #34495e;
     font-size: .99em;
+    text-decoration: none;
     
 }
+.logo{
+    margin-right: 5px;
+    margin-left: auto
+}
 
-/* Pseudo-class selector */
 .nav a:hover {
     background-color: #7ebeb6;
     color: #092747;
+}
+.footer{
+    background-color: rgb(173, 170, 170);
+    text-align: center;
+    text-shadow: 1px 1px #000000;
+    bottom: 0;
 }
 
 
