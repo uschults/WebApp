@@ -1,18 +1,37 @@
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="res/images/logo.png">
-    <link rel="stylesheet" href="res/css/style.css">
-    <title>Add post</title>
-  </head>
-  <body>
-    <div>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="res/css/style.css">
+  <link rel="icon" href="res/images/logo.png">
+  <title>Add post</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header class="header">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+    </ul>
+    <a class="logo" href="#"><img src="res/images/me.png" width="50" height="50" alt="My picture"></a>
+  </header>
+
+  <div class="flex-login">
     <form>
-        <label for="pbody">Post body:</label>
-        <input type="text" id="pbody" name="pbody" />
+      <div class="add-post">
+        <p class="formfield"><label for="pbody">Post body:</label>
+          <textarea class="pbody" id="pbody" name="pbody" rows="8" cols="40"></textarea>
+        </p>
+        <p class="formfield"><label for="pimage">Select file:</label>
+          <input type="file" id="pimage" name="pimage" , accept="image/*">
+        </p>
+      </div>
+      <div>
         <input type="submit" value="Create post" />
-      </form>
-    </div>
-  </body>
+      </div>
+    </form>
+</body>
+
 </html>
