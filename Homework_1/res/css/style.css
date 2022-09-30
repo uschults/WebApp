@@ -75,7 +75,7 @@ body {
     text-align: center;
     background-color: rgb(173, 170, 170);
     background-origin: border-box;
-    padding: 25px;
+    padding: 20px;
     border-radius: 25px;
     margin: auto;
     max-width: 500px;
@@ -155,30 +155,65 @@ body {
     height: auto;
 }
 
-/*  */
+/* Applies to the textarea immediately after the label */
 label + textarea{
     resize: none;
+    width: 250px;
+    min-width: 100px;
 }
 
-form.add-post {
-    display: table;
-}
-
-#create-post-button{
+/* ID selector */
+#cool-button{
     font-size: x-large;
+    color: white;
+    background-color: darkblue;
+    transition-duration: 0.4s;
+    border: thin solid white;
+    padding: 5px;
 }
 
-.formfield * {
-    vertical-align: top;
+/* ID selector with hover pseudo-class */
+#cool-button:hover{
+    background-color: white;
+    color: darkblue;
+}
+
+/* Applies to any element with immediate p.formfield parent */
+p.formfield > * {
+    vertical-align: middle;
     display: table-cell;
-    padding: 10px;
+    margin: 5px;
+    font-size: medium;
+
 }
 
-.formfield {
+/* class selector */
+p.formfield {
     display: table-row;
 }
 
-/*  */
-p.formfield > label{
+/* Selects the pseudo-element for inputs with type=file */
+input[type="file"]::file-selector-button {
+    font-size: small;
+    color: white;
+    background-color: gray;
+    transition-duration: 0.4s;
+    border: thin solid white;
+    padding: 5px;
+}
+
+/* Selects the pseudo-class of the pseudo-element */
+input[type="file"]::file-selector-button:hover {
+    color: gray;
+    background-color: white;
+  }
+
+/* Applies to the div immediately after div.add-post (neighbour child) */
+div.add-post + div{
+    padding-top: 20px;
+}
+
+/* Applies to labels inside p.formfield */
+p.formfield label{
     font-size: large;
 }
