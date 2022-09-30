@@ -155,12 +155,17 @@ body {
     height: auto;
 }
 
-.pbody {
+/*  */
+label + textarea{
     resize: none;
 }
 
 form.add-post {
     display: table;
+}
+
+#create-post-button{
+    font-size: x-large;
 }
 
 .formfield * {
@@ -171,4 +176,9 @@ form.add-post {
 
 .formfield {
     display: table-row;
+}
+
+/*  */
+p.formfield > label{
+    font-size: large;
 }
