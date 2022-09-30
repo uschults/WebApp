@@ -8,13 +8,15 @@
     */
 }
 
-ul {
+.nav {
     margin: 0;
     padding: 0;
+
+}
+.nav > li {
     list-style: none;
 
 }
-
 body {
     line-height: 1.6;
     margin: 0;
@@ -94,7 +96,9 @@ body {
     margin-right: 5px;
     min-height: 50px
 }
-
+.footer ul li{
+    list-style: none;
+}
 
 @media (min-width: 1000px) {
     .header {
@@ -118,7 +122,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0px;
-    height: 100vh;
+    /* height: 100%; */
     padding: 5px;
     justify-content: center;
 
@@ -148,11 +152,32 @@ body {
 .post {
     background-color: antiquewhite;
     margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
 }
 
-.post_image {
-    width: 80%;
+.post_body {
+    padding: 5px;
+    background-color: rgb(240, 226, 207);
+    border-radius: 25px;
+}
+
+.post_head{
+    display: flex;
+    flex-direction: row;
+}
+.post_head > p{
+    margin-left: auto;
+    margin-right: 10px ;
+}
+.post_footer{
+    padding-top: 5px;
+}
+.post_image{
+    width: 100%;
     height: auto;
+    max-height: 600px;
+    /* object-fit: contain; */
 }
 
 /* Applies to the textarea immediately after the label */
