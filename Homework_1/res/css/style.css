@@ -13,22 +13,25 @@
     padding: 0;
 
 }
-.nav > li {
+
+.nav>li {
     list-style: none;
 
 }
+
 body {
     /* background-image: repeating-radial-gradient(red, yellow 10%, red); */
-    background-image: url('Homework_1\res\images\logohigh.png');
-    background-repeat: repeat; 
+    background: url("../images/backgroundimage.jpg") repeat;
+    /* background-size: 200px; */
     /* background-color: #cccccc; */
-    background-size: cover;
-    
-
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
     line-height: 1.6;
-    margin: 0;
-    /* height: 100vh; */
-    /* display: flex; */
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
     flex-direction: column;
 }
 
@@ -38,12 +41,15 @@ body {
     padding-bottom: .5em;
     border: 1px solid #646174;
     /* background-color: #ff0000; */
-    background-color: darkgreen;
+    background-color: rgb(0, 253, 156);
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     text-align: center;
-    top: 0; /* Position the navbar at the top of the page */
+    top: 0;
+    /* Position the navbar at the top of the page */
     width: 100%;
+
+    max-width: 1000px;
 
 }
 
@@ -57,7 +63,7 @@ body {
 }
 
 .nav li {
-    border-left: 1px solid black;
+    border-left: 1px solid rgb(0, 0, 0);
 }
 
 .nav a {
@@ -84,7 +90,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgb(173, 170, 170);
+    background-color: rgb(0, 253, 156);
     background-origin: border-box;
     padding: 20px;
     border-radius: 25px;
@@ -96,17 +102,30 @@ body {
 
 
 .footer {
-    background-color: rgb(29, 0, 156);
+    background-color: rgb(60, 200, 255);
     text-align: center;
     border-radius: 10px;
     margin-top: auto;
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    min-height: 50px
+    width: 100%;
+    max-width: 1000px;
+    /* min-height: 50px; */
+
+
 }
-.footer ul li{
+
+.footer ul {
+    display: flex;
     list-style: none;
+}
+
+.footer ul li {
+    padding-right: 20px;
+    width: auto;
+    float: left;
+
 }
 
 /*  When screen width < n px :*/
@@ -119,11 +138,24 @@ body {
 @media (max-width: 800px) {
     .left_sidebar {
         visibility: hidden;
-
+        width: 0px;
     }
 
     .right_sidebar {
         visibility: hidden;
+        width: 0px;
+    }
+
+    .middle_postbar {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .middle {
+        width: 100%;
     }
 }
 
@@ -131,44 +163,41 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0px;
-    /* height: 100%; */
     padding: 5px;
     justify-content: center;
 
 }
 
 .right_sidebar {
-    /* background-color: rgb(0, 0, 0); */
-    background-image: linear-gradient(rgb(0, 242, 250), rgb(7, 10, 241));
+    background-image: linear-gradient(rgb(0, 253, 156), rgb(60, 200, 255));
     background-color: #cccccc;
     background-size: cover;
-
-
-    margin-right: 0px;
-    margin-left: auto;
+    width: 100%;
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: 0px;
     border-radius: 25px;
-    min-width: 150px;
 }
 
 .middle_postbar {
     width: 80%;
+    max-width: 1000px;
     min-width: 350px;
 }
 
 .left_sidebar {
-    background-image: linear-gradient(rgb(0, 242, 250), rgb(7, 10, 241));
+    background-image: linear-gradient(rgb(0, 253, 156), rgb(60, 200, 255));
     background-color: #cccccc;
     background-size: cover;
-
+    max-width: 150px;
+    width: 100%;
     border-radius: 25px;
-    min-width: 150px;
-    /* background-color: rgb(38, 0, 255); */
-    margin-right: auto;
-    margin-left: 0px;
+    margin-right: 0px;
+    margin-left: auto;
 }
 
 .post {
-    background-color: black;
+    background-color: rgb(84, 217, 250);
     margin: 10px;
     padding: 10px;
     border-radius: 25px;
@@ -176,54 +205,75 @@ body {
 }
 
 .post_body {
-    color: rgb(37, 158, 0);    ;
+    color: rgb(227, 243, 7);
     padding: 5px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.747);
     border-radius: 25px;
 }
 
-.post_head{
+.post_body>p {
+    padding-left: 8px;
+}
+
+.post_head {
     display: flex;
     flex-direction: row;
 }
-.post_head > p{
+
+.post_head>p {
     margin-left: auto;
-    margin-right: 10px ;
-}
-.post_footer{
-    padding-top: 5px;
-    display: flex;    
+    margin-right: 10px;
 }
 
-.post_image{
+.post_footer {
+    padding-top: 5px;
+    display: flex;
+}
+
+.post_image {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* object-fit: contain; */
+    padding: 20px;
 }
-.post_image > img{
+
+.post_image>img {
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
 }
 
-img.like_button{
-    padding-top: 5px;
-    padding-left: 5px;
-    width: auto;
-    height: auto;
-    max-width: 50px;
-    max-height: 50px;
+#profile_pic {
+    border-radius: 20px;
 }
 
+#like_button {
+    background-color: white;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    border: 2px solid black;
+}
 
-button.like_button ~ p {
+/* ID selector with hover pseudo-class */
+#like_button:hover {
+    border-radius: 20px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+#like_button:active {
+    transition-duration: 0ms;
+    box-shadow: -3px -3px -3px black;
+    outline: 2px solid black;
+}
+
+/* Selects all p after button.like_button (with same parent) */
+button.like_button~p {
     margin-right: 5px;
     margin-left: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 5px;
     background-color: red;
     color: white;
     border-radius: 10px;
@@ -231,14 +281,14 @@ button.like_button ~ p {
 }
 
 /* Applies to the textarea immediately after the label */
-label + textarea{
+label+textarea {
     resize: none;
     width: 250px;
     min-width: 100px;
 }
 
 /* ID selector */
-#cool-button{
+#cool_button {
     font-size: x-large;
     color: white;
     background-color: darkblue;
@@ -248,13 +298,14 @@ label + textarea{
 }
 
 /* ID selector with hover pseudo-class */
-#cool-button:hover{
+#cool_button:hover {
     background-color: white;
     color: darkblue;
+    cursor: pointer;
 }
 
 /* Applies to any element with immediate p.formfield parent */
-p.formfield > * {
+p.formfield>* {
     vertical-align: middle;
     display: table-cell;
     margin: 5px;
@@ -281,14 +332,14 @@ input[type="file"]::file-selector-button {
 input[type="file"]::file-selector-button:hover {
     color: gray;
     background-color: white;
-  }
+}
 
 /* Applies to the div immediately after div.add-post (neighbour child) */
-div.add-post + div{
+div.add-post+div {
     padding-top: 20px;
 }
 
 /* Applies to labels inside p.formfield */
-p.formfield label{
+p.formfield label {
     font-size: large;
 }

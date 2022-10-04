@@ -15,15 +15,16 @@
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
     </ul>
-    <a class="logo" href="login.html"><img src="res/images/me.png" width="50" height="50" alt="My picture"></a>
+    <a class="logo" href="login.html"><img id="profile_pic" src="res/images/me.png" width="50" height="50"
+        alt="My picture"></a>
   </header>
 
   <div class="center_box">
-    <form>
+    <form action="index.html">
       <div class="add-post">
         <p class="formfield">
           <label for="pbody">Post body:</label>
-          <textarea id="pbody" name="pbody" rows="8" maxlength="500"></textarea>
+          <textarea id="pbody" name="pbody" rows="8" maxlength="500" required></textarea>
         </p>
         <p class="formfield">
           <label for="pimage">Select file:</label>
@@ -31,7 +32,7 @@
         </p>
       </div>
       <div>
-        <input id="cool-button" type="submit" value="Create post" />
+        <input id="cool_button" type="submit" value="Create post" />
       </div>
     </form>
 </body>
