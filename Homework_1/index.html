@@ -7,13 +7,12 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="res/css/style.css">
     <link rel="icon" href="res/images/logo.png">
-    
 </head>
 <body>
     <header class = "header">
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="addPost.html">addPost</a></li>
+            <li><a href="addPost.html">Add post</a></li>
             
         </ul>
         <a class="logo" href="login.html"><img src="res/images/me.png" width="50" height="50" alt="My picture"></a>
@@ -27,10 +26,9 @@
 
         <div class="middle_postbar">
 
-
             <div class="post">
                 <div class="post_head">
-                    <a href=""><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
+                    <a><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
                     <p> Sep 30, 2022</p>
                 </div>
                 <div class="post_body">
@@ -41,50 +39,68 @@
                         </ul>
                 </div>
                 <div class="post_footer">
-                    <img src="res/images/like_button.png" width="50" height="30" alt="Like button">
+                    <button type="submit" class="like_button">
+                        <img src="res/images/like_button.png" width="40" height="40" alt="submit" />
+                       </button>
+                    <p> Likes: 69</p>
+                    <p> Comments: 42</p>
                 </div>
             </div>
 
 
             <div class="post">
                 <div class="post_head">
-                    <a href=""><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
+                    <a><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
                     <p> Sep 31, 2022</p>
                 </div>
                 <div class="post_body">
-                    <p> Sick game</p>
-                    <img class="post_image" src="res/images/noob.png" alt="My picture">
+                    <p> Sick soup</p>
+                    <div class="post_image">
+                        <img src="res/images/soup.png" alt="My picture">
+                    </div>
                 </div>
                 <div class="post_footer">
-                    <img src="res/images/like_button.png" width="50" height="30" alt="Like button">
+                    <div class="like_button">
+                        <img class="like_button" src="res/images/like_button.png" width="50" height="30" alt="Like button">
+                    </div>
+                    <p> Likes: 69</p>
+                    <p> Comments: 42</p>
                 </div>
             </div>
 
 
             <div class="post">
                 <div class="post_head">
-                    <a href=""><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
+                    <a><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
                     <p> Sep 32, 2022</p>
                 </div>
                 <div class="post_body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies lorem et leo luctus, non tincidunt nisi malesuada. Pellentesque semper ullamcorper augue. Sed nisi metus, facilisis sed ornare eget, dapibus non magna. Proin nulla tellus, tempor vel condimentum at, lobortis sed justo.</p>
                 </div>
                 <div class="post_footer">
-                    <img src="res/images/like_button.png" width="50" height="30" alt="Like button">
+                    <div class="like_button">
+                        <img class="like_button" src="res/images/like_button.png" width="50" height="30" alt="Like button">
+                    </div>
+                    <p> Likes: 69</p>
+                    <p> Comments: 42</p>
                 </div>
             </div>
 
 
             <div class="post">
                 <div class="post_head">
-                    <a href=""><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
+                    <a><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
                     <p> Sep 33, 2022</p>
                 </div>
                 <div class="post_body">
                     <p>Cras nisl mi, dictum nec facilisis sed, fringilla a lectus. Aenean id efficitur orci. Ut quis laoreet orci. In vitae tortor sed odio tristique rhoncus a eget massa. Nam purus libero, bibendum in lobortis eu, ultricies vitae tellus. Pellentesque eu finibus libero, in gravida risus. Pellentesque quis nisi at elit auctor maximus. Maecenas dictum orci in tellus aliquam tempor. Nulla non blandit magna, sed facilisis neque. Cras consectetur gravida enim, eu viverra erat laoreet placerat.</p>
                 </div>
                 <div class="post_footer">
-                    <img src="res/images/like_button.png" width="50" height="30" alt="Like button">
+                    <div class="like_button">
+                        <img class="like_button" src="res/images/like_button.png" width="50" height="30" alt="Like button">
+                    </div>
+                    <p> Likes: 69</p>
+                    <p> Comments: 42</p>
                 </div>
             </div>
 
@@ -92,14 +108,18 @@
         
             <div class="post">
                 <div class="post_head">
-                    <a href=""><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
+                    <a><img src="res/images/me.png" width="40" height="40" alt="My picture"></a>
                     <p> Sep 34, 2022</p>
                 </div>
                 <div class="post_body">
                     <p>Suspendisse vehicula massa ac sem suscipit pharetra. Nam lacus nibh, tristique ornare lacinia quis, rutrum eget magna. Nullam id volutpat turpis. Ut molestie felis eget accumsan condimentum. Sed posuere massa urna, vel posuere nunc tincidunt at. Maecenas sit amet felis magna. Curabitur tempus ultricies ante, nec convallis odio. Aenean nulla nisl, pretium at mi non, ultrices pretium est. Quisque cursus nisi ut eros porta, sed semper est sodales. Aliquam eget accumsan odio, ac feugiat tellus. Morbi a aliquam lacus. Mauris luctus porttitor orci, at pulvinar tortor pretium sed. ☺☺☺</p>
                 </div>
                 <div class="post_footer">
-                    <img src="res/images/like_button.png" width="50" height="30" alt="Like button">
+                    <div class="like_button">
+                        <img class="like_button" src="res/images/like_button.png" width="50" height="30" alt="Like button">
+                    </div>
+                    <p> Likes: 69</p>
+                    <p> Comments: 42</p>
                 </div>
             </div>
         </div>
