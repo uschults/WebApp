@@ -1,11 +1,6 @@
 * {
     font-family: monospace;
     box-sizing: border-box;
-    /*
-       CSS comment
-       The box-sizing CSS property sets how the total width and height of an element are calculated. 
-       If you set box-sizing: border-box; on an element, padding, and border are included in the width and height:
-    */
 }
 
 .nav {
@@ -20,10 +15,7 @@
 }
 
 body {
-    /* background-image: repeating-radial-gradient(red, yellow 10%, red); */
     background: url("../images/backgroundimage.jpg") repeat;
-    /* background-size: 200px; */
-    /* background-color: #cccccc; */
     align-items: center;
     overflow-x: hidden;
     position: relative;
@@ -40,7 +32,6 @@ body {
     padding-top: .5em;
     padding-bottom: .5em;
     border: 1px solid #646174;
-    /* background-color: #ff0000; */
     background-color: rgb(0, 253, 156);
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
@@ -111,7 +102,6 @@ body {
     margin-right: 5px;
     width: 100%;
     max-width: 1000px;
-    /* min-height: 50px; */
 
 
 }
