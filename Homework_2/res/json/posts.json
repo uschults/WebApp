@@ -2,7 +2,7 @@
   "Post1" :{
     "name": "Martin",
     "time": "Oct 22, 2022",
-    "image": "../images/soup.png",
+    "image": "res/images/soup.png",
     "body": "Which one crossed the road first?",
     "likes": 69,
     "comments": 42
