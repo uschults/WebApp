@@ -1,0 +1,335 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav>li {
+    list-style: none;
+
+}
+
+body {
+    background: url("../images/backgroundimage.jpg") repeat;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.6;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #646174;
+    background-color: rgb(0, 253, 156);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    text-align: center;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+
+    max-width: 1000px;
+
+}
+
+.nav {
+    font-weight: 900;
+    margin-left: -1px;
+    margin-top: 5px;
+    display: flex;
+
+
+}
+
+.nav li {
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+.nav a {
+    padding: 10px 15px;
+    display: block;
+    color: #34495e;
+    font-size: .99em;
+    text-decoration: none;
+
+}
+
+.logo {
+    margin-right: 15px;
+    margin-left: auto
+}
+
+.nav a:hover {
+    background-color: #7ebeb6;
+    color: #092747;
+}
+
+.center_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 253, 156);
+    background-origin: border-box;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+    max-width: 500px;
+    max-height: max-content;
+}
+
+
+
+.footer {
+    background-color: rgb(60, 200, 255);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 1000px;
+
+
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer ul li {
+    padding-right: 20px;
+    width: auto;
+    float: left;
+
+}
+
+/*  When screen width < n px :*/
+@media (min-width: 1000px) {
+    .header {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 800px) {
+    .left_sidebar {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .right_sidebar {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .middle_postbar {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .middle {
+        width: 100%;
+    }
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 5px;
+    justify-content: center;
+
+}
+
+.right_sidebar {
+    background-image: linear-gradient(rgb(0, 253, 156), rgb(60, 200, 255));
+    background-color: #cccccc;
+    background-size: cover;
+    width: 100%;
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: 0px;
+    border-radius: 25px;
+}
+
+.middle_postbar {
+    width: 80%;
+    max-width: 1000px;
+    min-width: 350px;
+}
+
+.left_sidebar {
+    background-image: linear-gradient(rgb(0, 253, 156), rgb(60, 200, 255));
+    background-color: #cccccc;
+    background-size: cover;
+    max-width: 150px;
+    width: 100%;
+    border-radius: 25px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.post {
+    background-color: rgb(84, 217, 250);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+
+}
+
+.post_body {
+    color: rgb(227, 243, 7);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 25px;
+}
+
+.post_body>p {
+    padding-left: 8px;
+}
+
+.post_head {
+    display: flex;
+    flex-direction: row;
+}
+
+.post_head>p {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.post_footer {
+    padding-top: 5px;
+    display: flex;
+}
+
+.post_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.post_image>img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#profile_pic {
+    border-radius: 20px;
+}
+
+#like_button {
+    background-color: white;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+/* ID selector with hover pseudo-class */
+#like_button:hover {
+    border-radius: 20px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+#like_button:active {
+    transition-duration: 0ms;
+    box-shadow: -3px -3px -3px black;
+    outline: 2px solid black;
+}
+
+/* Selects all p after button.like_button (with same parent) */
+button.like_button~p {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+/* Applies to the textarea immediately after the label */
+label+textarea {
+    resize: none;
+    width: 250px;
+    min-width: 100px;
+}
+
+/* ID selector */
+#cool_button {
+    font-size: x-large;
+    color: white;
+    background-color: darkblue;
+    transition-duration: 0.4s;
+    border: thin solid white;
+    padding: 5px;
+}
+
+/* ID selector with hover pseudo-class */
+#cool_button:hover {
+    background-color: white;
+    color: darkblue;
+    cursor: pointer;
+}
+
+/* Applies to any element with immediate p.formfield parent */
+p.formfield>* {
+    vertical-align: middle;
+    display: table-cell;
+    margin: 5px;
+    font-size: medium;
+
+}
+
+/* class selector */
+p.formfield {
+    display: table-row;
+}
+
+/* Selects the pseudo-element for inputs with type=file */
+input[type="file"]::file-selector-button {
+    font-size: small;
+    color: white;
+    background-color: gray;
+    transition-duration: 0.4s;
+    border: thin solid white;
+    padding: 5px;
+}
+
+/* Selects the pseudo-class of the pseudo-element */
+input[type="file"]::file-selector-button:hover {
+    color: gray;
+    background-color: white;
+}
+
+/* Applies to the div immediately after div.add-post (neighbour child) */
+div.add-post+div {
+    padding-top: 20px;
+}
+
+/* Applies to labels inside p.formfield */
+p.formfield label {
+    font-size: large;
+}

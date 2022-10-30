@@ -1,0 +1,73 @@
+{
+  "Post1" :{
+    "name": "Martin",
+    "time": "Oct 22, 2022",
+    "image": "../images/soup.png",
+    "body": "Which one crossed the road first?",
+    "likes": 69,
+    "comments": 42
+  },
+    "Post2" :{
+    "name": "Peeter",
+    "time": "Oct 23, 2022",
+    "body": "Hello my name is Peeter.",
+    "likes": 69,
+    "comments": 42
+  },
+    "Post3" :{
+    "name": "Marvin",
+    "time": "Oct 23, 2022",
+    "body": "Which one crossed the road first?",
+    "likes": 69,
+    "comments": 42
+  },
+    "Post4" :{
+    "name": "Jaanika",
+    "time": "Oct 24, 2022",
+    "body": "Suspendisse vehicula massa ac sem suscipit pharetra.",
+    "likes": 69,
+    "comments": 42
+  },
+    "Post5" :{
+    "name": "Maia",
+    "time": "Oct 24, 2022",
+    "body": "Which one crossed the road first?",
+    "likes": 69,
+    "comments": 42
+  },
+    "Post6" :{
+    "name": "Ain",
+    "time": "Oct 26, 2022",
+    "body": "Which one crossed the road first?",
+    "likes": 69,
+    "comments": 42
+  },
+    "Post7" :{
+    "name": "Lauri",
+    "time": "Oct 27, 2022",
+    "body": "Which one crossed the road first?",
+    "likes": 69,
+    "comments": 42
+  },
+    "Post8" :{
+    "name": "Vallo",
+    "time": "Oct 27, 2022",
+    "body": "Which one crossed the road first?",
+    "likes": 69,
+    "comments": 42
+  },
+    "Post9" :{
+    "name": "Vilma",
+    "time": "Oct 28, 2022",
+    "body": "Which one crossed the road first?",
+    "likes": 69,
+    "comments": 42
+  },
+    "Post10" :{
+    "name": "Kristjan",
+    "time": "Oct 29, 2022",
+    "body": "Which one crossed the road first?",
+    "likes": 69,
+    "comments": 42
+  }
+}
