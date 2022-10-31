@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Homework2</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="res/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="res/css/style.css" />
     <script type="text/javascript" src="src/js/script.js"></script>
-    <link rel="icon" href="res/images/logo.png">
-</head>
+    <link rel="icon" href="res/images/logo.png" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="addPost.html">Add post</a></li>
-
-        </ul>
-        <a class="logo" href="login.html"><img id="profile_pic" src="res/images/me.png" width="50" height="50"
-                alt="My picture"></a>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="addPost.html">Add post</a></li>
+      </ul>
+      <div class="user_profile">
+        <img
+          class="logo"
+          id="profile_pic"
+          src="res/images/me.png"
+          width="50"
+          height="50"
+          onclick="toggleUserMenu()"
+        />
+        <div id="userMenu" class="drop-menu">
+          <a href="#">John Doe</a>
+          <a href="#">john.doe@ut.ee</a>
+          <a href="login.html">Log out</a>
+        </div>
+      </div>
     </header>
 
     <div class="middle">
-        <div class="left_sidebar">
-        </div>
-        <div class="middle_postbar", id="posts">
-        </div>
-        <div class="right_sidebar">
-        </div>
+      <div class="left_sidebar"></div>
+      <div class="middle_postbar" , id="posts"></div>
+      <div class="right_sidebar"></div>
     </div>
 
     <footer class="footer">
-        <ul>
-            <li>
-                <p>Masterminds:</p>
-            </li>
-            <li>
-                <p>Ingvar Drikkit</p>
-            </li>
-            <li>
-                <p>Kasper Kaljuste</p>
-            </li>
-            <li>
-                <p>Urmo Schults-Kopp</p>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <p>Masterminds:</p>
+        </li>
+        <li>
+          <p>Ingvar Drikkit</p>
+        </li>
+        <li>
+          <p>Kasper Kaljuste</p>
+        </li>
+        <li>
+          <p>Urmo Schults-Kopp</p>
+        </li>
+      </ul>
     </footer>
-
-</body>
-
+  </body>
 </html>
