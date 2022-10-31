@@ -1,73 +1,74 @@
 {
   "Post1" :{
-    "name": "Martin",
+    "name": "GRANDmom",
     "time": "Oct 22, 2022",
     "image": "res/images/soup.png",
-    "body": "Which one crossed the road first?",
-    "likes": 69,
-    "comments": 42
+    "body": "Eat your veggies",
+    "likes": 500,
+    "comments": 15
   },
     "Post2" :{
     "name": "Peeter",
     "time": "Oct 23, 2022",
-    "body": "Hello my name is Peeter.",
-    "likes": 69,
-    "comments": 42
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies lorem et leo luctus,non tincidunt nisi malesuada. Pellentesque semper ullamcorper augue. Sed nisi metus, facilisissed ornare eget, dapibus non magna. Proin nulla tellus, tempor vel condimentum at, lobortis sed justo.",
+    "likes": 1,
+    "comments": 0
   },
     "Post3" :{
     "name": "Marvin",
     "time": "Oct 23, 2022",
     "body": "Which one crossed the road first?",
-    "likes": 69,
-    "comments": 42
+    "likes": 1,
+    "comments": 23554
   },
     "Post4" :{
-    "name": "Jaanika",
+    "name": "Tellytubby",
     "time": "Oct 24, 2022",
-    "body": "Suspendisse vehicula massa ac sem suscipit pharetra.",
+    "image": "res/images/wow.png",
+    "body": "Birdwatching",
     "likes": 69,
     "comments": 42
   },
     "Post5" :{
-    "name": "Maia",
+    "name": "xxxS3xyb3astxxx",
     "time": "Oct 24, 2022",
-    "body": "Which one crossed the road first?",
-    "likes": 69,
-    "comments": 42
+    "body": "I'm lonely",
+    "likes": 9999999,
+    "comments": 420
   },
     "Post6" :{
     "name": "Ain",
     "time": "Oct 26, 2022",
-    "body": "Which one crossed the road first?",
-    "likes": 69,
-    "comments": 42
+    "body": "The strange quantum uncertainty <br> here, there, and everywhere, <br> within, without, nonrandom bits sustain <br> universal poetic harmony. <br> The aetheric history matter dark intones",
+    "likes": 50,
+    "comments": 2 
   },
     "Post7" :{
     "name": "Lauri",
     "time": "Oct 27, 2022",
-    "body": "Which one crossed the road first?",
+    "body": "Selling csgo skins",
     "likes": 69,
     "comments": 42
   },
     "Post8" :{
     "name": "Vallo",
     "time": "Oct 27, 2022",
-    "body": "Which one crossed the road first?",
-    "likes": 69,
-    "comments": 42
+    "body": "What day was the Homework 2 deadline???????",
+    "likes": 0,
+    "comments": 5
   },
     "Post9" :{
     "name": "Vilma",
     "time": "Oct 28, 2022",
-    "body": "Which one crossed the road first?",
-    "likes": 69,
-    "comments": 42
+    "body": "Hello darkness my old friend",
+    "likes": 1,
+    "comments": 1
   },
     "Post10" :{
-    "name": "Kristjan",
+    "name": "Tiit ja Teet",
     "time": "Oct 29, 2022",
-    "body": "Which one crossed the road first?",
-    "likes": 69,
-    "comments": 42
+    "body": "Pakun Soome tööd, palk igal reedel ausalt kätte",
+    "likes": 0,
+    "comments": 0
   }
 }

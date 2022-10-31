@@ -210,9 +210,17 @@ body {
     flex-direction: row;
 }
 
-.post_head>p {
+.post_name {
+    margin-left: 10px;
+    margin-right: auto;
+    color: rgb(108, 1, 129);
+    font-size: larger;
+    font-weight: 900;
+}
+
+.post_time{
     margin-left: auto;
-    margin-right: 10px;
+    padding-right: 20px;
 }
 
 .post_footer {
