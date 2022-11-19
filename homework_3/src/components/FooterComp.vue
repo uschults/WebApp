@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="cool-footer">
         <div class="cool-guys-h">Cool guys: </div>
-        <div class="cool-guys">Ingvar Drikkit, Urmo Schults-Kopp, Kasper Kaljuste</div>
+        <div class="cool-guys">Copyright © Ingvar Drikkit, Urmo Schults-Kopp, Kasper Kaljuste</div>
     </div>
 </template>
 
@@ -14,20 +14,21 @@ export default {
 
 
 <style>
-    div {
-        color: black;
+    .cool-footer {
+        margin-top: auto;
+        border-radius: 20px;
+        color: lightgreen;
+        background-color: black;
     }
 
     .cool-guys {
-        background-color: black;
-        color: white;
+        
         font-size: smaller;
         padding: 5px;
     }
 
     .cool-guys-h {
-        color: white;
-        background-color: black;
+        
         font-weight: bold;
         font-size: large;
         padding: 5px;

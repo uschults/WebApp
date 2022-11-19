@@ -17,6 +17,8 @@ export default {
 
 nav {
   padding: 30px;
+  background-color: black;
+  border-radius: 20px;
 }
 
 nav a {
@@ -28,6 +30,7 @@ nav a {
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
   color: lightgreen;
+  border: thin solid lightgreen;
 }
 
 nav a.router-link-exact-active {
