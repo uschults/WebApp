@@ -5,7 +5,7 @@ export default createStore({
   state: {
     posts : [
       { 
-        id: 1,
+        itemid: 1,
         name: "GRANDmom",
         time: "Oct 22, 2022",
         image: "/soup.png",
@@ -14,7 +14,7 @@ export default createStore({
         comments: 15
       },
       {
-        id: 2,
+        itemid: 2,
         name: "Peeter",
         time: "Oct 23, 2022",
         body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies lorem et leo luctus,non tincidunt nisi malesuada. Pellentesque semper ullamcorper augue. Sed nisi metus, facilisissed ornare eget, dapibus non magna. Proin nulla tellus, tempor vel condimentum at, lobortis sed justo.",
@@ -22,7 +22,7 @@ export default createStore({
         comments: 0
       },
       {
-        id: 3,
+        itemid: 3,
         name: "Marvin",
         time: "Oct 23, 2022",
         body: "Which one crossed the road first?",
@@ -30,7 +30,7 @@ export default createStore({
         comments: 23554
       },
       {
-        id: 4,
+        itemid: 4,
         name: "Tellytubby",
         time: "Oct 24, 2022",
         image: "/wow.png",
@@ -39,7 +39,7 @@ export default createStore({
         comments: 42
       },
       {
-        id: 5,
+        itemid: 5,
         name: "xxxS3xyb3astxxx",
         time: "Oct 24, 2022",
         body: "I'm lonely",
@@ -47,7 +47,7 @@ export default createStore({
         comments: 420
       },
       {
-        id: 6,
+        itemid: 6,
         name: "Ain",
         time: "Oct 26, 2022",
         body: "The strange quantum uncertainty here, there, and everywhere, within, without, nonrandom bits sustain universal poetic harmony. The aetheric history matter dark intones",
@@ -55,7 +55,7 @@ export default createStore({
         comments: 2
       },
       {
-        id: 7,
+        itemid: 7,
         name: "Lauri",
         time: "Oct 27, 2022",
         body: "Selling csgo skins",
@@ -63,7 +63,7 @@ export default createStore({
         comments: 42
       },
       {
-        id: 8,
+        itemid: 8,
         name: "Vallo",
         time: "Oct 28, 2022",
         body: "What day was the Homework 3 deadline???????",
@@ -71,7 +71,7 @@ export default createStore({
         comments: 5
       },
       {
-        id: 9,
+        itemid: 9,
         name: "Vilma",
         time: "Oct 28, 2022",
         body: "Hello darkness my old friend",
@@ -79,7 +79,7 @@ export default createStore({
         comments: 1
       },
       {
-        id: 10,
+        itemid: 10,
         name: "Tiit ja teet",
         time: "Oct 29, 2022",
         body: "Pakun Soome tööd, palk igal reedel ausalt kätte",
@@ -92,6 +92,7 @@ export default createStore({
     postsList : state => {
       var postsList = state.posts.map(post =>{
         return {
+          itemid: post.itemid,
           name: post.name,
           time: post.time,
           image: post.image,
@@ -103,13 +104,23 @@ export default createStore({
     }
   },
   mutations: {
-    IncreaseLike: (state, id) =>{
-        const found = state.posts.find(item => item.id === id);
-        found.likes += 1; 
+    IncreaseLike(state, payload){
+      state.posts.forEach(item => {    
+        if(item.itemid == payload.postid){
+          item.likes += 1;
+        }
+      });
+
     }
+    
+    
   },
   actions: {
-  },
+    IncreaseLikeAct: ({commit}, payload) => {
+     commit("IncreaseLike", payload)
+  }},
+
   modules: {
   }
+
 })

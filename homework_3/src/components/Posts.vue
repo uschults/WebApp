@@ -23,7 +23,7 @@
                 </div>
                 
                 <div class = "post_footer">
-                    <button type="submit" class="like_button" id="like_button" v-on:click="IncreaseLike"> <img src="..\..\public\like_button.png" width="40" height="40" alt="Like" /> </button>
+                    <button type="submit" class="like_button" id="like_button" @click="IncreaseLike(post.itemid)"> <img src="..\..\public\like_button.png" width="40" height="40" alt="Like" /> </button>
                     <p>Likes:{{post.likes}}</p>
                     <p>Comments:{{post.comments}}</p>
                 </div>
@@ -39,10 +39,16 @@ export default {
     name: "Posts",
 
     methods: {
-        IncreaseLike: function(){
-           this.$store.commit("IncreaseLike", {id})
-           console.log("tere")
-        }},
+      IncreaseLike(postid){
+        this.$store.dispatch("IncreaseLikeAct", {postid})
+      },
+
+      ResetLike: function(){
+        this.$store.commit("ResetLike")
+      }
+        
+    
+    },
         
     computed: {
         postsList(){
@@ -112,6 +118,11 @@ body {
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.747);
   border-radius: 25px;
+}
+
+.post_id{
+  width: auto;
+  height: auto;
 }
 
 .post_body > p {
