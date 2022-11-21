@@ -28,7 +28,9 @@
                     <p>Comments:{{post.comments}}</p>
                 </div>
             </div>
+            <button type="submit" class="like_button"  v-on:click="ResetLike">"Reset likes"</button>
         </div> 
+        
         <div class="right_sidebar"></div>
     </div>  
 </body>
@@ -44,7 +46,7 @@ export default {
       },
 
       ResetLike: function(){
-        this.$store.commit("ResetLike")
+        this.$store.dispatch("ResetLikeAct")
       }
         
     
