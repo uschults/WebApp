@@ -1,5 +1,4 @@
 <template>
-    <body>
     <div class="middle">  
         <div class="left_sidebar"></div>
         <div class="middle_postbar" id="posts">
@@ -26,6 +25,7 @@
                     <button type="submit" class="like_button" id="like_button" @click="IncreaseLike(post.itemid)"> <img src="..\..\public\like_button.png" width="40" height="40" alt="Like" /> </button>
                     <p>Likes:{{post.likes}}</p>
                     <p>Comments:{{post.comments}}</p>
+                    
                 </div>
             </div>
             <button type="submit" class="like_button"  v-on:click="ResetLike">"Reset likes"</button>
@@ -33,7 +33,7 @@
         
         <div class="right_sidebar"></div>
     </div>  
-</body>
+
 </template>
 
 <script>
@@ -136,7 +136,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-
 }
 
 .post_image > img {
@@ -169,6 +168,7 @@ body {
 button.like_button ~ p {
   margin-right: 5px;
   margin-left: 5px;
+  margin-top: 60px;
   padding-left: 10px;
   padding-right: 10px;
   background-color: red;
@@ -198,6 +198,7 @@ button.like_button ~ p {
 .post_footer {
   padding-top: 5px;
   display: flex;
+  
 }
 
 .middle_postbar {

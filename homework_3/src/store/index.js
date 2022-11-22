@@ -27,7 +27,7 @@ export default createStore({
         time: "Oct 23, 2022",
         body: "Which one crossed the road first?",
         likes: 1,
-        comments: 23554
+        comments: 235
       },
       {
         itemid: 4,
@@ -43,7 +43,7 @@ export default createStore({
         name: "xxxS3xyb3astxxx",
         time: "Oct 24, 2022",
         body: "I'm lonely",
-        likes: 9999999,
+        likes: 999,
         comments: 420
       },
       {
@@ -97,7 +97,8 @@ export default createStore({
           time: post.time,
           image: post.image,
           body: post.body,
-          likes: post.likes
+          likes: post.likes,
+          comments: post.comments
         }
       });
       return postsList
